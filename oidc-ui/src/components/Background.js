@@ -21,12 +21,12 @@ export default function Background({
     configurationKeys.signupConfig
   );
 
-  useEffect(() => {
-    if(signupConfig?.[configurationKeys.signupBanner]) {
-      setSignupBanner(false);
-      setSignupURL(signupConfig[configurationKeys.signupURL] + "#" + authService.getAuthorizeQueryParam());
-    }
-  }, [i18n.language]);
+  // useEffect(() => {
+  //   if(signupConfig?.[configurationKeys.signupBanner]) {
+  //     setSignupBanner(false);
+  //     setSignupURL(signupConfig[configurationKeys.signupURL] + "#" + authService.getAuthorizeQueryParam());
+  //   }
+  // }, [i18n.language]);
 
   // check signup banner is present or not,
   // and padding according to that only
